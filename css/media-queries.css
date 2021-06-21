@@ -1,4 +1,4 @@
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 320px) {
     body {
         display: flex;
         flex-direction: column;
@@ -7,28 +7,37 @@
 
     .alert-info {
         background-color: lightskyblue;
-        border: .5em solid gray;
+        border: .1em solid gray;
+        padding: .4em;
         align-self: center;
         width: 100%;
         text-align: center;
+    }
 
+    .alert-info > #main {
+        text-decoration: none;
     }
 
     .nav-links > li {
         list-style-type: none;
         background-color: lightgrey;
         margin: .5em;
-        text-align: center;
         width: 100%;
     }
 
-    .nav-links > li > a {
-        align-items: center;
+    ul > li {
+        align-self: center;
+        width: 100%;
+        text-align: center;
     }
 
 
     .header-img {
+        width: 300px;
+    }
 
+    img {
+        width: 300px;
     }
 
 
