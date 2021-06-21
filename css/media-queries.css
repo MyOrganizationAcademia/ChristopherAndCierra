@@ -1,8 +1,7 @@
-@media screen and (min-width: 320px) {
+
     body {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .alert-info {
@@ -10,35 +9,101 @@
         border: .1em solid gray;
         padding: .4em;
         align-self: center;
-        width: 100%;
+        width: 95%;
         text-align: center;
     }
-
-    .alert-info > #main {
-        text-decoration: none;
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin: .2em;
     }
 
-    .nav-links > li {
+    .alert-info > a {
+        text-decoration: none;
+        color: black;
+        font-weight: normal;
+    }
+
+    ul{
+        padding: 0;
+        margin: 5px;
+    }
+
+
+    li {
+        height: 50px;
+        align-items: center;
+        display: flex;
         list-style-type: none;
         background-color: lightgrey;
-        margin: .5em;
-        width: 100%;
-    }
-
-    ul > li {
-        align-self: center;
-        width: 100%;
-        text-align: center;
+        justify-content: center;
+        margin: 5px;
     }
 
 
-    .header-img {
-        width: 300px;
-    }
+
 
     img {
-        width: 300px;
+        display: block;
+        align-items: center;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+
+    }
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .alert-info {
+        display: none;
+    }
+    h1 {
+        display: flex;
+        justify-content: flex-start;
+        margin: .2em;
+        float: left;
+    }
+
+    .alert-info > a {
+        text-decoration: none;
+        color: black;
+        font-weight: normal;
+    }
+
+    ul{
+        display: flex;
+        float: right;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 5px;
+    }
+
+
+    li {
+        height: 50px;
+        align-items: center;
+        display: flex;
+        list-style-type: none;
+        background-color: white;
+        justify-content: center;
+        margin: 5px;
+    }
+
+
+    img {
+        display: block;
+        align-items: center;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
     }
 
 
 }
+
